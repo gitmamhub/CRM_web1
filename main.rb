@@ -34,8 +34,8 @@ name_3 = Contact.create('sonia','farhana','sonia@gmail.com','I am new here !!!')
 
 
 
-a_crm_app = CRM.new
-a_crm_app.main_menu
+# a_crm_app = CRM.new
+# a_crm_app.main_menu
 
 
 

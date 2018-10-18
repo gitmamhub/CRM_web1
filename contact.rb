@@ -1,3 +1,8 @@
+
+
+
+
+
 class Contact
 
   @@contacts = []
