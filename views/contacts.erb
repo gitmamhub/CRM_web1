@@ -8,12 +8,18 @@
   <body>
           <h1>Here is your Data</h1>
           <h3>..................</h3>
+          <p> We have currently <span> <%= @contacts.length %>  </span> members in the list </p>
 
-          <% Contact.contacts.each do |contact| %>
-            <%= contact.first_name %>
-            <%= contact.last_name %>
-            <%= contact.email %>
-            <%= contact.notes %>
-            <% end  %>
+
+          <% @contacts.each do |contact| %>
+        <ul>
+          <li>  <%= contact.full_name %> </li>
+          <li>  <%= contact.email %> </li>
+          <li>  <%= contact.note%> </li>
+          <a href="contacts/<%= contact.id %>">Show</a>
+          |
+          <a href="contacts/<%= contact.id %>/edit">Edit</a>
+        </ul>
+          <% end  %>
   </body>
 </html>
