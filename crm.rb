@@ -31,7 +31,9 @@ get '/contacts/:id'do # finding a contact
   if @contact
     erb :show_contact
   else
-    raise Sinetra::NotFound
+
+    # raise Sinetra::NotFound
+    erb :not_found 
   end
 end
 

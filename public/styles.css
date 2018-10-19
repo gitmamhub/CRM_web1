@@ -52,7 +52,11 @@ table {
   box-sizing: border-box;
   border-spacing: 0;
 }
+ body > span > h1 {
 
+	background-color: red;
+	color: yellow;
+}
 
 h1{
   background-color: red;
@@ -93,16 +97,17 @@ footer{
 
 ul > li > p {
 	background-color: lightcoral;
-	font-size: 30px;
+	font-size: 20px;
   font-weight: bold;
   margin: 3px 1px 3px 15px;
+	text-align: center;
 }
 body {
   font-family: 'Arial'
 }
 
 
-body > div > h3 {
+body > div > h3 > a{
 
-  color: red
+  color: lightblue;
 }
