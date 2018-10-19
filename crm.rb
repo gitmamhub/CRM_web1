@@ -4,6 +4,9 @@ require 'sinatra'
 
 
 
+get '/contacts/'do
+  redirect to ('/index')
+end
 get '/' do
   @contacts = Contact.all
   redirect to ('/index')
@@ -33,7 +36,7 @@ get '/contacts/:id'do # finding a contact
   else
 
     # raise Sinetra::NotFound
-    erb :not_found 
+    erb :not_found
   end
 end
 
