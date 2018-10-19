@@ -91,6 +91,12 @@ footer{
 
 }
 
+ul > li > p {
+	background-color: lightcoral;
+	font-size: 30px;
+  font-weight: bold;
+  margin: 3px 1px 3px 15px;
+}
 body {
   font-family: 'Arial'
 }
