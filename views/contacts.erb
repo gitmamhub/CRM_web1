@@ -6,8 +6,8 @@
     <title></title>
   </head>
   <body>
-          <h1>Here is your Data</h1>
-          <h3>..................</h3>
+          <!-- <h1>Here is your Data</h1> -->
+          <!-- <h3>..................</h3> -->
           <p> We have currently <span> <%= @contacts.length %>  </span> members in the list </p>
 
 
@@ -16,9 +16,11 @@
           <li>  <%= contact.full_name %> </li>
           <li>  <%= contact.email %> </li>
           <li>  <%= contact.note%> </li>
-          <a href="contacts/<%= contact.id %>">Show</a>
-          |
+          <!-- <a href="contacts/<%= contact.id %>">Show</a>
+          | -->
           <a href="contacts/<%= contact.id %>/edit">Edit</a>
+          |
+          <a href="contacts/<%= contact.id %>/">Delete</a>
         </ul>
           <% end  %>
   </body>
